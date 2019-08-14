@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 * {
 	padding: 0;
@@ -192,7 +192,7 @@ ul,li{list-style: none;}
 	width:1280px;
 	height:72px;
 	text-align:center;
-	font-family:"微软雅黑";
+	font-family:'Conv_Nexa Light',Sans-Serif;
 	font-weight:bold;
 	color:#000;
 	font-size:68px;
@@ -422,35 +422,40 @@ ul,li{list-style: none;}
 	}	
 .personal_center_texttype5{
 	height:48px;
-	width:208px;
+	width:188px;
+	padding-left:20px;
 	border-radius:5px;
 	background-color:#FFF;
 	border:1px solid #D8D8D8;
 	}	
 .personal_center_texttype4{
 	height:48px;
-	width:88px;
+	width:68px;
+	padding-left:20px;
 	border-radius:5px;
 	background-color:#FFF;
 	border:1px solid #D8D8D8;
 	}	
 .personal_center_texttype3{
 	height:48px;
-	width:148px;
+	width:128px;
+	padding-left:20px;
 	border-radius:5px;
 	background-color:#FFF;
 	border:1px solid #D8D8D8;
 	}
 .personal_center_texttype2{
 	height:48px;
-	width:318px;
+	width:298px;
+	padding-left:20px;
 	border-radius:5px;
 	background-color:#FFF;
 	border:1px solid #D8D8D8;
 	}
 .personal_center_texttype1{
 	height:48px;
-	width:348px;
+	width:328px;
+	padding-left:20px;
 	border-radius:5px;
 	background-color:#FFF;
 	border:1px solid #D8D8D8;
