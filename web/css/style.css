@@ -974,9 +974,9 @@ ul,li{list-style: none;}
 }
 .footerBottomRightMeun{
 	float: right;
-	width: 160px;
+	width: 150px;
 	height: auto;
-	margin-left: 50px;
+	margin-left: 60px;
 }
 .footerBottomRightMeunTitle{
 	height: 14px;
@@ -993,7 +993,7 @@ ul,li{list-style: none;}
 }
 .footerBottomRightMeunContent{
 	height: auto;
-	width: 160px;
+	width: 150px;
 
 }
 .footerBottomRightMeunContent li{
