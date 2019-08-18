@@ -698,29 +698,7 @@ ul,li{list-style: none;}
 }
 
 
-/* .contentMemberBoxTopContentCarouselArrowLeft{
-	position: absolute;
-	top:240px;
-	left: 0;
-	width:30px;
-	height: 130px;
-	background-image: url(../images/per.png);
-}
-.contentMemberBoxTopContentCarouselArrowRight{
-	position: absolute;
-	top:240px;
-	right: 0;
-	width: 30px;
-	height: 130px;
-	background-image: url(../images/nex.png);
-} */
 
-/* .swiper-wrapper{
-	width: 1190px;
-	height: 620px;
-	padding-left: 45px;
-	padding-right: 45px;
-} */
 .swiper-container{
 	width: 1190px;
 	height: 620px;
