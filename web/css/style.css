@@ -2,7 +2,7 @@
  * @Author: Xuhaichen 
  * @Date: 2019-08-17 21:35:02 
  * @Last Modified by: Xuhaichen
- * @Last Modified time: 2019-08-18 22:38:32
+ * @Last Modified time: 2019-08-18 23:49:54
  */
 @charset "utf-8";
 
@@ -697,13 +697,6 @@ ul,li{list-style: none;}
 	background-repeat: no-repeat;
 }
 
-
-
-/* .swiper-container{
-	width: 1190px;
-	height: 620px;
-
-} */
 .XuhaichenSwiper{
 	width: 1190px;
 	height: 620px;
@@ -769,7 +762,12 @@ ul,li{list-style: none;}
 	font-size: 15px;
 	color: #000000;
 }
-.swiper-pagination{
+/* .swiper-pagination{
+	width: 100%;
+	bottom: 0px;
+	left: 0;
+} */
+.swiper-pagination_xuhaichen{
 	width: 100%;
 	bottom: 0px;
 	left: 0;
@@ -783,9 +781,12 @@ ul,li{list-style: none;}
 	background-color: #ffffff;
 	opacity: 1;
 }
+
+
 .swiper-pagination-bullet-active{
 	background-color: #E05E9E;
 }
+
 
 
 /* Member Bottom */
@@ -2186,9 +2187,7 @@ ul,li{list-style: none;}
 	padding-left:104px;
 	padding-right:104px;
 }
-.sucImg_ywb{
-	
-}
+
 .sucText_ywb{
 	width:100%;
 	height:28px;
