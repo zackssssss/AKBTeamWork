@@ -2,7 +2,7 @@
  * @Author: Xuhaichen 
  * @Date: 2019-08-17 21:35:02 
  * @Last Modified by: Xuhaichen
- * @Last Modified time: 2019-08-18 14:39:32
+ * @Last Modified time: 2019-08-18 14:49:33
  */
 @charset "utf-8";
 
@@ -212,6 +212,13 @@ ul,li{list-style: none;}
 	font-size: 14px;
 	color: #000000;
 	margin-left: 56px;
+}
+.headerNavFixedRightBottom li a{
+	color: #000000;
+	text-decoration: none;
+}
+.headerNavFixedRightBottom li a:hover{
+	text-decoration: underline;
 }
 
 /* header end */
