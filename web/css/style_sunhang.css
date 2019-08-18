@@ -13,7 +13,6 @@ body{
 	width: 100%;
 	height: 100%;
 	min-height: 100%;
-	background-color:#FAE0E9;
 }
 img:not([src*="/"]){display:none;}
 img {
@@ -38,57 +37,44 @@ li,ol{
 #header {
 	position:relative;
 	width: 100%;
-	height:auto;
+    height:auto;
+    
 }
-.headerBox{
+.shheaderBox{
 	width:100%;
-	height:140px;
+    height:160px;
+    background-color:#FAE0E9;
 }
-.headerBox1{
-	position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 96%;
-    height: 140px;
-    padding-left: 2%;
-    padding-right: 2%;
-    background-position: bottom center;
-    z-index: 9;
-}
-.headerBox0{
-	width: 1200px;
-    height: 140px;
+.shheaderWidthBox{
+    width: 1280px;
+    height: 160px;
     margin: 0 auto;
 }
-.headerleftBox{
+
+.shlogoBox{
 	float: left;
-    width: 40%;
-    height: 140px;
+    width: 116px;
+    height: 160px;
 }
-.logoBox{
+.shheaderrightBox{
 	float: left;
-    width: 102px;
-    height: 140px;
+    width: 1164px;
+    height: 160px;
 }
-.headerrightBox{
-	float: left;
-    width: 60%;
+.shrighttopBox{
+	width: 1164px;
     height: 100px;
-    padding-top: 40px;
+
 }
-.righttopBox{
-	width: 100%;
-    height: 30px;
-    margin-bottom: 15px;
-}
-.righttopBox a{
+.shrighttopBox a{
 	float: right;
     width: 80px;
     height: 30px;
     line-height: 30px;
+    margin-top: 48px;
     margin-left: 20px;
     font-family: "微软雅黑";
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     color: #fff;
     text-align: center;
@@ -97,213 +83,360 @@ li,ol{
     text-decoration: none;
 }
 
-.menuBox{
-	width: 100%;
-    height: 12px;
+.shmenuBox{
+	width: 1164px;
+    height: 60px;
 }
-.menuBox li{
+.shmenuBox li{
 	float: right;
     width: auto;
     height: 12px;
     line-height: 12px;
     margin-left: 50px;
     font-family: "微软雅黑";
-    font-size: 14px;
+    font-size: 15px;
     color: #333;
     text-align: center;
 }
 #content{
 	position:relative;
 	width:100%;
-	height:auto;
+    height:auto;
+    
 }
 
-/* footer start */
+.shcontentNoWidthBox{
+    height: auto;
+    width: 100%;
+    background-color:#FAE0E9;
+}
+
+.shcontentBox {
+    width: 1280px;
+	height: auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
+    margin: 0 auto;
+    
+}
+
+.shloginBox{
+	width: 440px;
+	height: 480px;
+	margin: 0 auto;
+}
+
+.shloginTitle{
+	width:440px;
+	height:65px;
+	line-height:65px;
+	font-family:'Conv_Nexa Light',Sans-Serif;
+	font-size:60px;
+	margin-bottom: 6px;
+	color:#222;
+	text-align:center;
+}
+
+.shloginMember{
+	width: 440px;
+	height:30px;
+	line-height:30px;
+	font-family:"微软雅黑";
+	font-size:30px;
+	color:#222;
+	text-align:center;
+}
+
+.shimportBox{
+	width: 440px;
+    height: auto;
+    padding-top: 36px;
+}
+
+.shimportBox li{
+	width: 440px;
+	height:50px;
+	margin-bottom:28px;
+}
+
+.shtextBox{
+	width: 410px;
+	height:50px;
+	list-style: height 50px;
+	padding-left:30px;
+	font-family:"微软雅黑";
+	font-size:14px;
+	color:#999;
+	border:0;
+	background-color:#fff;
+	border-radius:3px;
+}
+
+.shverifyCode{
+	float: left;
+    width: 275px;
+    height: 50px;
+}
+
+.shverifyCodeText{
+	width: 245px;
+	height:50px;
+	line-height:50px;
+	padding-left:30px;
+	font-family:"微软雅黑";
+	font-size:14px;
+	color:#999;
+	border:0;
+	background-color:#fff;
+	border-radius:3px;
+}
+
+ .shverifyPics{
+	float: left;
+	width: 160px;
+	padding-left: 5px;
+    height: 50px;
+ }
+
+ .shconfirmBox{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	font-family:"微软雅黑";
+	font-size:14px;
+	color:#fff;
+	text-align:center;
+	background-color:#222;
+	border-radius:3px;
+ }
+
+ .shnoNum{
+	float:left;
+	width:50%;
+	height:40px;
+	line-height:40px;
+	padding-bottom:20px;
+	font-family:"微软雅黑";
+	font-size:12px;
+	color:#222;
+ }
+.shnoNum a{
+    color: #F64E91;
+    text-decoration: none;
+
+ }
+.shnoNum a:hover{
+    text-decoration: underline;
+ }
+ .shforgetPsw{
+	float: left;
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #F64E91;
+    text-align: right;
+}
+.shforgetPsw a{
+    color: #F64E91;
+    text-decoration: none;
+
+ }
+.shforgetPsw a:hover{
+    text-decoration: underline;
+ }
+
+
+ .shmodBox{
+	width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+}
+.shmodWidthBox{
+	width: 1280px;
+	height: auto;
+	margin: 0 auto;
+	padding-top:175px;
+}
+
+.shtipBox{
+	width: 330px;
+    height: 190px;
+    margin: 0 auto;
+}
+
+.shiconBox{
+	width: 110px;
+    height: 110px;
+	margin: 0 auto;
+}
+
+
+.shicontextBox{
+	width: 330px;
+    height: 30px;
+	line-height: 30px;
+	margin-top: 20px;
+    font-family: "微软雅黑";
+    font-size: 30px;
+    color: #F64E91;
+    text-align: center;
+}
+
+.shtextTip{
+	width: 330px;
+    height: 15px;
+	line-height: 15px;
+	margin-top: 15px;
+    font-family: "微软雅黑";
+    font-size: 15px;
+    color: #222;
+    text-align: center;
+}
+
+.shforgetWidthBox{
+	width: 1280px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.shforgetWidthBox1{
+	width: 440px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.shtitleBox{
+	width: 440px;
+    height: 65px;
+    line-height: 65px;
+    margin-bottom: 6px;
+    font-family: 'Conv_Nexa Light',Sans-Serif;
+    font-size: 60px;
+    color: #222;
+    text-align: center;
+}
+
+.shtitleBox1{
+    width: 440px;
+    height: 30px;
+    line-height: 30px;
+    font-family: "微软雅黑";
+    font-size: 30px;
+    color: #222;
+    text-align: center;
+}
+
+.shimportBox{
+	width: auto;
+    height: auto;
+    padding-top: 36px;
+}
+
+.shimportBox li{
+	width: auto;
+    height: 50px;
+    margin-bottom: 28px;
+}
+
+.shnumImport{
+	width: 410px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #999;
+    border: 0;
+    background-color: #fff;
+    border-radius: 3px;
+
+}
+
+.shpswImport{
+	float: left;
+    width: 290px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.shpswtextImport{
+	width: 260px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #999;
+    border: 0;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.shgetCodeBox{
+	float: left;
+    width: 140px;
+    height: 50px;
+}
+
+.shgetCode{
+	width: auto;
+    height: 50px;
+    line-height: 50px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    background-color: #F64E91;
+    border-radius: 3px;
+}
+
+.shnewPsw{
+	width: 410px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #999;
+    border: 0;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.shnewPsw1{
+	width: 410px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #999;
+    border: 0;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.shmodPsw{
+	width: 440px;
+    height: 50px;
+    line-height: 50px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    background-color: #222;
+    border-radius: 3px;
+}
+
 #footer{
 	position:relative;
 	width:100%;
 	height:auto;
 }
-.footerBox{
-	width: 100%;
-	height: 870px;
 
-}
-/* footerTop start */
-.footerTopBox{
-	width: 100%;
-	height: 490px;
-	background-color: #F7CFDF;
-	border-bottom: 1px solid #FAE0E9
-}
-.footerTopWidthBox{
-	width: 1280px;
-	height: 490px;
-	margin: 0 auto;
-
-}
-.footerTopTitle{
-	height: 60px;
-	width: 100%;
-	padding-top: 70px;
-	
-	font-family: 'Conv_Nexa Light',Sans-Serif;
-	font-size: 45px;
-	color: #E05E9E;
-	line-height: 60px;
-	text-align: center;
-	margin-bottom: 40px;
-}
-.footerTopGroup{
-	height: 230px;
-	width: 100%;
-}
-.footerTopGroupTop{
-	height: 100px;
-	width: 1280px;
-	margin-bottom: 30px;
-
-}
-.footerTopGroupTop li{
-	float: left;
-	height: 97px;
-	width: 232px;
-}
-.footerTopGroupTop li:not(:last-child){
-	margin-right:30px;
-}
-.footerTopGroupBottom{
-	height: 100px;
-	width: 1018px;
-	padding-left: 131px;
-	padding-right: 131px;
-
-}
-.footerTopGroupBottom li{
-	float: left;
-	height: 97px;
-	width: 232px;
-}
-.footerTopGroupBottom li:not(:last-child){
-	margin-right:30px;
-}
-/* .footerTopGroupBottomImg{
-	float: left;
-	height: 100px;
-	width: 234px;
-	margin-right: 28px;
-} */
-
-/* footerTop end */
-
-/* footerBottom start */
-.footerBottomBox{
-	width: 100%;
-	height: 380px;
-	background-color:#E05E9E;
-}
-.footerBottomWidthBox{
-	width: 1280px;
-	height: 380px;
-	margin: 0 auto;
-}
-.footerBottomLeftBox{
-	float: left;
-	width: 640px;
-	height: 295px;
-	padding-top: 85px;
-}
-
-.footerBottomLeftLogo{
-	height: 86px;
-	width: 100%;
-	margin-bottom: 20px;
-}
-.footerBottomLeftLogoImg{
-	height: 86px;
-	width: 64px;
-}
-.footerBootomLeftText{
-	height: auto;
-	width: 100%;
-}
-.footerBootomLeftTextNav{
-	height: 15px;
-	width: 100%;
-	margin-bottom: 10px;
-}
-.footerBootomLeftTextNav li{
-	float: left;
-	height: 15px;
-	width: auto;
-	font-size: 12px;
-	font-family: "微软雅黑";
-	color: #ffffff;
-	line-height: 15px;
-	margin-left: 15px;
-	padding-right: 12px;
-	border-right: 1px solid #ffffff;
-}
-.footerBootomLeftTextNav li a{
-	color: #ffffff;
-	text-decoration: none;
-}
-
-.footerBootomLeftTextCopyRights{
-	height: 15px;
-	width: 100%;
-	font-family: "微软雅黑";
-	font-size: 12px;
-	color: #ffffff;
-	line-height: 15px;
-}
-
-.footerBottomRightBox{
-	float: right;
-	width: 590px;
-	height: 295px;
-	padding-left: 50px;
-	padding-top: 85px;
-}
-.footerBottomRightMeun{
-	float: right;
-	width: 145px;
-	height: auto;
-	margin-left: 65px;
-}
-.footerBottomRightMeunTitle{
-	height: 14px;
-	width: 145px;
-	line-height: 14px;
-	font-family: "微软雅黑";
-	font-size: 14px;
-	color: #ffffff;
-	padding-bottom: 16px;
-	border-bottom: 2px solid #ffffff;
-
-	margin-bottom: 20px;
-}
-.footerBottomRightMeunContent{
-	height: auto;
-	width: 200px;
-
-}
-.footerBottomRightMeunContent li{
-	height: 14px;
-	width: auto;
-	font-family: "微软雅黑";
-	font-size: 12px;
-	color: #ffffff;
-	line-height: 14px;
-	margin-bottom: 15px;
-
-}
-.footerBottomRightMeunContent li a{
-	color: #ffffff;
-	text-decoration: none;
-
-}
-/* footerBottom end */
-/* footer end */
 
 
