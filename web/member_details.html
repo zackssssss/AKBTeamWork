@@ -10,9 +10,9 @@
 
 <link rel="stylesheet" href="css/swiper.min.css" />
 <link rel="stylesheet" href="css/fonts.css" />
-
+<!-- <link rel="stylesheet" href="css/style_dujian.css" /> -->
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/style_dujian.css" />
+
 </head>
 
 <body>
@@ -220,7 +220,7 @@
                             <div class="dj_DownLeftTitleDown">Member Album</div>
                         </div>
                         <div class="dj_DownLeftContent">
-                            <div class="swiper-container">
+                            <div class="swiper-container DuJianSwiper swiper-no-swiping">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide"><img src="images/dj_photo2.png" alt="photoAlbum"></div>
                                     <div class="swiper-slide"><img src="images/dj_photo2.png" alt="photoAlbum"></div>
@@ -341,7 +341,7 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('.DuJianSwiper', {
             spaceBetween: 30,
             centeredSlides: true,
             autoplay: {

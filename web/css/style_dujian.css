@@ -404,10 +404,11 @@ ul,li{
 	height: 660px;
 	background-color: #FFFFFF;
 }
-.swiper-container {
+/* 轮播图开始 */
+
+.DuJianSwiper{
 	width: 100%;
 	height: 100%;
-
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
