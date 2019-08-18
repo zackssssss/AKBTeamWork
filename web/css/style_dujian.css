@@ -404,28 +404,13 @@ ul,li{
 	height: 660px;
 	background-color: #FFFFFF;
 }
-.swiper-container {
+/* 轮播图开始 */
+
+.DuJianSwiper{
 	width: 100%;
 	height: 100%;
-
 }
-.swiper-slide {
 
-	font-size: 18px;
-	background-color: #FFFFFF;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	align-items: center;
-}
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
 	margin: 0px 6px 0px 6px;
 }
@@ -437,6 +422,9 @@ ul,li{
 	opacity: 1;
 	background-color: #E05E9E;
 }
+/* 轮播图结束 */
+
+
 .dj_contentDownRight{
 	position: relative;
 	float: right;
@@ -488,30 +476,3 @@ ul,li{
 	height:auto;
 }
 
-
-.footerTop{
-	position: relative;
-	width: 100%;
-	height:490px ;
-	background-color: #F7CFDF;
-}
-.footerTopBox{
-	position: relative;
-	width: 1280px;
-	height: 490px;
-	margin:0 auto
-}
-
-
-.footerDown{
-	position: relative;
-	width: 100%;
-	height: 385px;
-	background-color: #E05E9E;
-}
-.footerDownBox{
-	position: relative;
-	width: 1280px;
-	height: 385px;
-	margin:0 auto
-}
