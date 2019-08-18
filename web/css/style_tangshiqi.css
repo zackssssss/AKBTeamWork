@@ -21,6 +21,13 @@ max-width: 100%;
 height: auto;
 }
 
+/* @font-face {
+	font-family: 'Conv_Nexa Light';
+	src: url('fonts/Nexa Light.eot');
+	src: local('☺'), url('fonts/Nexa Light.woff') format('woff'), url('fonts/Nexa Light.ttf') format('truetype'), url('fonts/Nexa Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+} */
 
 a img { border: 0; }
 
@@ -177,6 +184,7 @@ ul,li{
 	font-size: 12px;
 	line-height: 12px;
 	text-align: center;
+	font-family: 'Conv_Nexa Light',Sans-Serif;
 	color: #e05e9e;
 }
 
@@ -206,7 +214,7 @@ ul,li{
 	height: auto;
 	margin: 0 auto;
 	padding-top: 70px;
-	padding-bottom: 55px;
+	padding-bottom: 50px;
 	overflow: hidden;
 }
 
@@ -234,7 +242,7 @@ ul,li{
 	position: absolute;
 	top: 10px;
 	left: 15px;
-	width: 20px;
+	width: 20px !important;
 	height: 20px;
 	line-height: 20px;
 }
@@ -273,16 +281,38 @@ ul,li{
 }
 
 .memcontentListBottom li{
+	position: relative;
 	float: left;
 	width: 305px;
 	height: 390px;
 	margin-right: 20px;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 	background-color: #ffffff;
+	overflow: hidden;
 }
 
 .memcontentListBottom li:nth-child(4n) {
 	margin-right: 0px;
+}
+
+.memcontentListBottomSlide {
+	position: absolute;
+    top: 0;
+	left: -305px;
+	width: 610px;
+    cursor: pointer;
+}
+
+.memcontentListBottomSlideLeft {
+	float: left;
+	width: 305px;
+    height: 390px;
+}
+
+.memcontentListBottomSlideRight {
+	float: left;
+	width: 305px;
+	height: 390px;
 }
 
 #footer{
@@ -387,6 +417,84 @@ ul,li{
 /* footerTop end */
 
 /* footerBottom start */
+#footer{
+	position:relative;
+	width:100%;
+	height:auto;
+}
+.footerBox{
+	width: 100%;
+	height: 870px;
+
+}
+/* footerTop start */
+.footerTopBox{
+	width: 100%;
+	height: 490px;
+	background-color: #F7CFDF;
+	border-bottom: 1px solid #FAE0E9
+}
+.footerTopWidthBox{
+	width: 1280px;
+	height: 490px;
+	margin: 0 auto;
+
+}
+.footerTopTitle{
+	height: 60px;
+	width: 100%;
+	padding-top: 70px;
+	
+	font-family: 'Conv_Nexa Light',Sans-Serif;
+	font-size: 45px;
+	color: #E05E9E;
+	line-height: 60px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.footerTopGroup{
+	height: 230px;
+	width: 100%;
+}
+.footerTopGroupTop{
+	height: 100px;
+	width: 1280px;
+	margin-bottom: 30px;
+
+}
+.footerTopGroupTop li{
+	float: left;
+	height: 97px;
+	width: 232px;
+}
+.footerTopGroupTop li:not(:last-child){
+	margin-right:30px;
+}
+.footerTopGroupBottom{
+	height: 100px;
+	width: 1018px;
+	padding-left: 131px;
+	padding-right: 131px;
+
+}
+.footerTopGroupBottom li{
+	float: left;
+	height: 97px;
+	width: 232px;
+}
+.footerTopGroupBottom li:not(:last-child){
+	margin-right:30px;
+}
+/* .footerTopGroupBottomImg{
+	float: left;
+	height: 100px;
+	width: 234px;
+	margin-right: 28px;
+} */
+
+/* footerTop end */
+
+/* footerBottom start */
 .footerBottomBox{
 	width: 100%;
 	height: 380px;
@@ -399,7 +507,7 @@ ul,li{
 }
 .footerBottomLeftBox{
 	float: left;
-	width: 640px;
+	width: 550px;
 	height: 295px;
 	padding-top: 85px;
 }
@@ -438,6 +546,9 @@ ul,li{
 	color: #ffffff;
 	text-decoration: none;
 }
+.footerBootomLeftTextNav li a:hover{
+	text-decoration: underline;
+}
 
 .footerBootomLeftTextCopyRights{
 	height: 15px;
@@ -450,33 +561,32 @@ ul,li{
 
 .footerBottomRightBox{
 	float: right;
-	width: 590px;
+	width: 730px;
 	height: 295px;
-	padding-left: 50px;
+	
 	padding-top: 85px;
 }
 .footerBottomRightMeun{
 	float: right;
-	width: 145px;
+	width: 150px;
 	height: auto;
-	margin-left: 65px;
+	margin-left: 60px;
 }
 .footerBottomRightMeunTitle{
 	height: 14px;
 	width: 145px;
+	margin-right: 55px;
 	line-height: 14px;
 	font-family: "微软雅黑";
 	font-size: 14px;
 	color: #ffffff;
 	padding-bottom: 16px;
 	border-bottom: 2px solid #ffffff;
-
 	margin-bottom: 20px;
 }
 .footerBottomRightMeunContent{
 	height: auto;
-	width: 200px;
-
+	width: 150px;
 }
 .footerBottomRightMeunContent li{
 	height: 14px;
@@ -493,5 +603,58 @@ ul,li{
 	text-decoration: none;
 
 }
+.footerBottomRightMeunContent li a:hover{
+	text-decoration: underline;
+}
 /* footerBottom end */
 /* footer end */
+
+.memcontentBox .tab-wrapper {
+	width: 1280px;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 70px;
+	padding-bottom: 55px;
+	overflow: hidden;
+	max-width: 1280px;
+}
+
+.memcontentBox .tab-menu {
+	margin-bottom: 25px;
+	width: 1280px;
+	height: 40px;
+}
+
+.memcontentBox .tab-menu li {
+	position: relative;
+	float: left;
+	margin-right: 15px;
+	width: 166px;
+	height: 36px;
+	background-color: #ffffff;
+	border: 2px solid #e05e9e;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	line-height: 36px;
+	text-align: center;
+	color: #e05e9e;
+	padding: 0;
+	opacity: 1;
+}
+
+.memcontentBox .tab-menu li.active {
+	color: #ffffff;
+	background-color: #e05e9e;
+}
+
+.memcontentBox .tab-content {
+	float: left;
+	width: 1280px;
+	height: auto;
+}
+
+.memcontentBox .tab-content {
+	float: left;
+	width: 1280px;
+	height: auto;
+}
