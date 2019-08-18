@@ -2,7 +2,7 @@
  * @Author: Xuhaichen 
  * @Date: 2019-08-17 21:35:02 
  * @Last Modified by: Xuhaichen
- * @Last Modified time: 2019-08-18 12:37:13
+ * @Last Modified time: 2019-08-18 13:29:21
  */
 @charset "utf-8";
 
@@ -1033,3 +1033,231 @@ ul,li{list-style: none;}
 /* footerBottom end */
 /* footer end */
 
+
+
+/* Member_list_tangshiqi css start */
+
+.memheadBox {
+	width: 100%;
+	height: 420px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-image: url(../images/memberTop.png);
+}
+
+.memheadShadow {
+	position:absolute;
+	top: 0;
+	width: 100%;
+	height: 210px;
+	background-image: url(../images/memberShadow2.png);
+}
+
+
+
+
+.memcontentBox {
+	width: 100%;
+	height: auto;
+	background-color: #fae0e9;
+	overflow: hidden;
+}
+
+.memcontentLeft {
+	position: absolute;
+	top: 70px;
+	left: 10px;
+	width: 100px;
+	height: 200px;
+	z-index: 9;
+}
+
+.memcontentLeftTop {
+	float: left;
+	width: 70px;
+	height: 12px;
+	font-size: 12px;
+	line-height: 12px;
+	text-align: center;
+	font-family: 'Conv_Nexa Light',Sans-Serif;
+	color: #e05e9e;
+}
+
+.memcontentLeftBottom {
+	float: left;
+	margin-top: 20px;
+	margin-left: 3px;
+	width: 64px;
+	height: 160px;
+}
+
+.memcontentLeftBottomTop {
+	float: left;
+	width: 64px;
+	height: 64px;
+}
+
+.memcontentLeftBottomBottom {
+	float: left;
+	margin-top: 20px;
+	width: 64px;
+	height: 64px;
+}
+
+.memcontentList {
+	width: 1280px;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 70px;
+	padding-bottom: 50px;
+	overflow: hidden;
+}
+
+.memcontentListTop {
+	margin-bottom: 25px;
+	width: 1280px;
+	height: 40px;
+}
+
+.memcontentButton1 {
+	position: relative;
+	float: left;
+	margin-right: 15px;
+	width: 170px;
+	height: 40px;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	line-height: 40px;
+	color: #ffffff;
+	text-align: center;
+	background-color: #e05e9e;
+}
+
+.memcontentButton1Icon {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	width: 20px !important;
+	height: 20px;
+	line-height: 20px;
+}
+
+.memcontentButton2 {
+	float: left;
+	margin-right: 15px;
+	width: 166px;
+	height: 36px;
+	background-color: #ffffff;
+	border: 2px solid #e05e9e;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	line-height: 36px;
+	text-align: center;
+	color: #e05e9e;
+}
+
+.memcontentButton3 {
+	float: left;
+	width: 166px;
+	height: 36px;
+	background-color: #ffffff;
+	border: 2px solid #e05e9e;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	line-height: 36px;
+	text-align: center;
+	color: #e05e9e;
+}
+
+.memcontentListBottom {
+	float: left;
+	width: 1280px;
+	height: auto;
+}
+
+.memcontentListBottom li{
+	position: relative;
+	float: left;
+	width: 305px;
+	height: 390px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background-color: #ffffff;
+	overflow: hidden;
+}
+
+.memcontentListBottom li:nth-child(4n) {
+	margin-right: 0px;
+}
+
+.memcontentListBottomSlide {
+	position: absolute;
+    top: 0;
+	left: -305px;
+	width: 610px;
+    cursor: pointer;
+}
+
+.memcontentListBottomSlideLeft {
+	float: left;
+	width: 305px;
+    height: 390px;
+}
+
+.memcontentListBottomSlideRight {
+	float: left;
+	width: 305px;
+	height: 390px;
+}
+
+/* tab start */
+.memcontentBox .tab-wrapper {
+	width: 1280px;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 70px;
+	padding-bottom: 55px;
+	overflow: hidden;
+	max-width: 1280px;
+}
+
+.memcontentBox .tab-menu {
+	margin-bottom: 25px;
+	width: 1280px;
+	height: 40px;
+}
+
+.memcontentBox .tab-menu li {
+	position: relative;
+	float: left;
+	margin-right: 15px;
+	width: 166px;
+	height: 36px;
+	background-color: #ffffff;
+	border: 2px solid #e05e9e;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	line-height: 36px;
+	text-align: center;
+	color: #e05e9e;
+	padding: 0;
+	opacity: 1;
+}
+
+.memcontentBox .tab-menu li.active {
+	color: #ffffff;
+	background-color: #e05e9e;
+}
+
+.memcontentBox .tab-content {
+	float: left;
+	width: 1280px;
+	height: auto;
+}
+
+.memcontentBox .tab-content {
+	float: left;
+	width: 1280px;
+	height: auto;
+}
+/* Member_list_tangshiqi css end */
