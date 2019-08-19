@@ -236,7 +236,7 @@ ul,li{list-style: none;}
 	left: 10px;
 	width: 70px;
 	height: 200px;
-	z-index: 2;
+	z-index: 9;
 }
 .contentLeftFixedTitle{
 	height: 20px;
