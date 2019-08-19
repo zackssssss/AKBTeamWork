@@ -273,15 +273,6 @@
 
 
                                 </li>
-                                <li>
-                                    <img src="images/newsList/zwg_news_8.png">
-                                    <div class="newsListdetailNewsTime">2018-7-12</div>
-                                    <div class="newsListdetailNewsTitleBg"></div>
-                                    <div class="newsListdetailNewsTitle">『 2018 Summerキャンペーン 』
-                                        開催のお知らせ♪</div>
-                                    <div class="newsListcheckBt">查看详情</div>
-
-                                </li>
 
 
                             </ul>
@@ -379,16 +370,7 @@
 
 
                                 </li>
-                                <li>
-                                    <img src="images/newsList/zwg_news_7.png">
-                                    <div class="newsListdetailNewsTime">2018-7-12</div>
-                                    <div class="newsListdetailNewsTitleBg"></div>
-                                    <div class="newsListdetailNewsTitle">『 2018 Summerキャンペーン 』
-                                        開催のお知らせ♪</div>
-                                    <div class="newsListcheckBt">查看详情</div>
 
-
-                                </li>
                                 <li>
                                     <img src="images/newsList/zwg_news_8.png">
                                     <div class="newsListdetailNewsTime">2018-7-12</div>
@@ -565,20 +547,16 @@
     })
 </script>
 <script>
+
     $(".swiper-pagination").on("click","span",function(){
 
         const index = $(this).index();
-        var pageIdex = $('.swiper-container .swiper-slide').eq(index).
-        $(window).alert(pageIdex)
 
-        if (!index){
+        var a = $(".swiper-wrapper").children().eq(index);
+        var b = a.children().children().children().length;
+        var c = (Math.ceil(b/4)*380)+'px';
+        $(".swiper-wrapper").stop().animate({"height":c},500);
 
-            var trueHeight = 1975 + 'px';
-            $(".newsListcontentBox").stop().animate({"height":trueHeight},1500);
-        }
-        else {
-            $(".newsListcontentBox").stop().animate({"height":"885px"},100);
-        }
 
     })
     var swiper = new Swiper('.swiper-container', {
@@ -607,11 +585,9 @@
                 }
                 if (index==3){
                     return '<span class="' + className + '"'+' style="border-color: #FF8E00;" '+'>' + '最新演出' + '</span>';
-
                 }
                 if (index==4){
                     return '<span class="' + className + '"'+' style="border-color: #FF2080;" '+'>' + '新上商品' + '</span>';
-
                 }
 
             },
