@@ -674,7 +674,7 @@ ul,li{list-style: none;}
 	height: 635px;
 	width: 100%;
 }
-.swiper-button-prev{
+.swiper-button-prev_xuhaichen{
 	position: absolute;
 	top:240px;
 	left: 0;
@@ -685,7 +685,7 @@ ul,li{list-style: none;}
 	background-position: top center;
 	background-repeat: no-repeat;
 }
-.swiper-button-next{
+.swiper-button-next_xuhaichen{
 	position: absolute;
 	top:240px;
 	right: 0;
@@ -773,7 +773,7 @@ ul,li{list-style: none;}
 	left: 0;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination_xuhaichen .swiper-pagination-bullet {
 	height: 10px;
 	width: 10px;
 	border-radius: 5px;
@@ -783,7 +783,7 @@ ul,li{list-style: none;}
 }
 
 
-.swiper-pagination-bullet-active{
+.swiper-pagination_xuhaichen .swiper-pagination-bullet-active{
 	background-color: #E05E9E;
 }
 
