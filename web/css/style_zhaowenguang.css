@@ -547,18 +547,16 @@ a{cursor: pointer;}
 /* footerBottom end */
 /* footer end */
 
-.swiper-slide{
+.swiper-slide_zhaowenguang{
 	width:100%;
 	height:auto;
 }
-/*.swiper-slide .swiper-slide-active{*/
-/*	height: auto;*/
-/*}*/
-.swiper-pagination{
+
+.swiper-pagination_zhaowenguang{
 	position: static;
 }
 
-.swiper-pagination .swiper-pagination-bullet{
+.swiper-pagination_zhaowenguang .swiper-pagination-bullet{
 	float: left;
 	width: 166px;
 	height: 36px;
@@ -575,12 +573,12 @@ a{cursor: pointer;}
 	border-radius:0;
 	opacity: 1;
 }
-.swiper-pagination .swiper-pagination-bullet:first-child{
+.swiper-pagination_zhaowenguang .swiper-pagination-bullet:first-child{
 	position: relative;
 }
 
 
-.swiper-pagination .swiper-pagination-bullet-active{
+.swiper-pagination_zhaowenguang .swiper-pagination-bullet-active{
 	float: left;
 	width: 166px;
 	height: 36px;
