@@ -1066,7 +1066,18 @@ ul,li{list-style: none;}
 	height: 210px;
 	background-image: url(../images/memberShadow2.png);
 }
-
+.memheadBottom{
+	position: relative;
+	top: 230px;
+	width: 1280px;
+	height: 80px;
+	line-height: 80px;
+	font-family: 'Conv_Nexa Light',Sans-Serif;
+	font-size: 80px;
+	color: #ffffff;
+	text-align: center;
+	margin:0 auto;
+}
 
 
 
