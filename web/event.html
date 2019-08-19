@@ -3,183 +3,285 @@
 
 <head>
 <meta charset="utf-8">
-<title>canlendar</title>
+<title>abc</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 
-    <link href='packages/core/main.css' rel='stylesheet' />
-    <link href='packages/daygrid/main.css' rel='stylesheet' />
-    <link href='packages/list/main.css' rel='stylesheet' />
-    <script src='packages/core/main.js'></script>
-    <script src='packages/interaction/main.js'></script>
-    <script src='packages/daygrid/main.js'></script>
-    <script src='packages/list/main.js'></script>
-    <script src='packages/google-calendar/main.js'></script>
-    <link rel="stylesheet" href="css/style_lizizheng.css" />
-
+<script src='js/jquery-1.9.1.min.js'></script>
+<script src='js/jquery-ui-1.10.2.custom.min.js'></script>
+<script src='js/fullcalendar.min.js'></script>
+<link rel="stylesheet" type="text/css" href="css/fullcalendar.css">
+<!-- <link rel="stylesheet" href="css/style_lizizhen.css" /> -->
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="event_container">
+        <div class="event_eventBC"></div>
         <div id="header">
-            <div class="headerWidth">
-                <div class="headerTop">
-                    <div class="headerTopLogo"></div>
-                    <div class="headerTopRight">
-                        <div class="headerTopRightTop">
-                            <div class="headerTopRightLoginBackground">注册</div>
-                            <div class="headerTopRightLoginBackground">登入</div>
+            <div class="event_headerLizizhenBox">
+                <div class="event_headerWidth">
+                <div class="event_headerTop">
+                    <div class="headerNavLeftBox">
+                        <div class="headerNavLeftLogo">
+                            <img src="images/logo.png" alt="LOGO"/>
                         </div>
-                        <div class="headerTopRightBottom">
+                    </div>
+                    <div class="headerNavRightBox">
+                        <div class="headerNavRightTop">
+                            <a href="register.html" >注&nbsp;&nbsp;册</a>
+                            <a href="login.html" >登&nbsp;&nbsp;入</a>
+                        </div>
+                        <div class="headerNavRightBottom">
                             <ul>
-                                <ul>
-                                    <li><a href="i.html">关于我们</a></li>
-                                    <li><a href="i.html">剧场票务</a></li>
-                                    <li><a href="i.html">商&nbsp;&nbsp;场</a></li>
-                                    <li><a href="i.html">活&nbsp;&nbsp;动</a></li>
-                                    <li><a href="i.html">成&nbsp;&nbsp;员</a></li>
-                                    <li><a href="i.html">新&nbsp;&nbsp;闻</a></li>
-                                    <li><a href="i.html">首&nbsp;&nbsp;页</a></li>
-                                </ul>
+                                <li><a href="#">关于我们</a></li>
+                                <li><a href="#">剧场票务</a></li>
+                                <li><a href="#">商&nbsp;&nbsp;场</a></li>
+                                <li><a href="event.html">活&nbsp;&nbsp;动</a></li>
+                                <li><a href="member_list.html">成&nbsp;&nbsp;员</a></li>
+                                <li><a href="news_list.html">新&nbsp;&nbsp;闻</a></li>
+                                <li><a href="index.html">首&nbsp;&nbsp;页</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="headerText">活动  EVENTS</div>
+                <div class="event_headerText">活动  EVENTS</div>
             </div>
+        </div>
+        <div class="headerNavFixed">
+            <div class="headerNavFixedWidthBox">
+                <div class="headerNavFixedLeftBox">
+                    <div class="headerNavFixedLeftBoxImg">
+                        <img src="images/NavFixLogo.png" alt="">
+                    </div>
+                </div>
+                <div class="headerNavFixedRightBox">
+                    <div class="headerNavRightTop">
+                        <a href="register.html" >注&nbsp;&nbsp;册</a>
+                        <a href="login.html" >登&nbsp;&nbsp;入</a>
+                    </div>
+                    <div class="headerNavFixedRightBottom">
+                        <ul>
+                            <li><a href="#">关于我们</a></li>
+                            <li><a href="#">剧场票务</a></li>
+                            <li><a href="#">商&nbsp;&nbsp;场</a></li>
+                            <li><a href="event.html">活&nbsp;&nbsp;动</a></li>
+                            <li><a href="member_list.html">成&nbsp;&nbsp;员</a></li>
+                            <li><a href="news_list.html">新&nbsp;&nbsp;闻</a></li>
+                            <li><a href="index.html">首&nbsp;&nbsp;页</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
         </div>
 
     	<div id="content">
-            <div class="contentEvent">
-                <div id='loading'>loading...</div>
+            <div class="contentLeftFixed">
+                <div class="contentLeftFixedTitle">Follow us</div>
+                <div class="contentLeftFixedIcon">
+                    <ul>
+                        <li><img src="images/WX.png" onmouseover="this.src='images/WX_hover.png'" onmouseout="this.src='images/WX.png'" alt=""></li>
+                        <li><img src="images/WB.png" onmouseover="this.src='images/WB_hover.png'" onmouseout="this.src='images/WB.png'" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contentRightFixed">
+                <img src="images/Top.png" alt="">
+            </div>
+
+            <div class="event_contentBox">
+                <div class="event_contentEvent">
                 <div id='calendar'></div>
             </div>
+            <div class="event_eventBox">
+                <div class="event_eventBoxClose"></div>
+                <div class="event_eventBoxPhoto"></div>
+            </div>
+            </div>
+
+
+
+            
+
         </div>
 
         <!--footer start-->
-    <div id="footer">
-        <div class="footerBox">
-            <div class="footerTopBox">
-                <div class="footerTopWidthBox">
-                    <div class="footerTopTitle">AKB48 Group</div>
-                    <div class="footerTopGroup">
-                        <div class="footerTopGroupTop">
-                            <ul>
-                                <li><img src="images/1.png" /></li>
-                                <li><img src="images/2.png" /></li>
-                                <li><img src="images/3.png" /></li>
-                                <li><img src="images/4.png" /></li>
-                                <li><img src="images/5.png" /></li>
-                            </ul>
-                        </div>
-                        <div class="footerTopGroupBottom">
-                            <ul>
-                                <li><img src="images/6.png" /></li>
-                                <li><img src="images/7.png" /></li>
-                                <li><img src="images/8.png" /></li>
-                                <li><img src="images/9.png" /></li>
-                            </ul>
+        <div id="footer">
+            <div class="footerBox">
+                <div class="footerTopBox">
+                    <div class="footerTopWidthBox">
+                        <div class="footerTopTitle">AKB48 Group</div>
+                        <div class="footerTopGroup">
+                            <div class="footerTopGroupTop">
+                                <ul>
+                                    <li><img src="images/1.png" /></li>
+                                    <li><img src="images/2.png" /></li>
+                                    <li><img src="images/3.png" /></li>
+                                    <li><img src="images/4.png" /></li>
+                                    <li><img src="images/5.png" /></li>
+                                </ul>
+                            </div>
+                            <div class="footerTopGroupBottom">
+                                <ul>
+                                    <li><img src="images/6.png" /></li>
+                                    <li><img src="images/7.png" /></li>
+                                    <li><img src="images/8.png" /></li>
+                                    <li><img src="images/9.png" /></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="footerBottomBox">
-                <div class="footerBottomWidthBox">
-                    <div class="footerBottomLeftBox">
-                        <div class="footerBottomLeftLogo">
-                            <div class="footerBottomLeftLogoImg"><img src="images/BottomLogo1.png" alt="底部logo" /></div>
-                        </div>
-                        <div class="footerBootomLeftText">
-                            <div class="footerBootomLeftTextNav">
-                                <ul>
-                                    <li style="margin-left: 0"><a href="#">网站地图</a></li>
-                                    <li><a href="#">使用条款</a></li>
-                                    <li><a href="#">隐私保护</a></li>
-                                    <li style="border-right: 0"><a href="#">联系我们</a></li>
-                                </ul>
+                <div class="footerBottomBox">
+                    <div class="footerBottomWidthBox">
+                        <div class="footerBottomLeftBox">
+                            <div class="footerBottomLeftLogo">
+                                <div class="footerBottomLeftLogoImg"><img src="images/BottomLogo1.png" alt="底部logo" /></div>
                             </div>
-                            <div class="footerBootomLeftTextCopyRights">Copyright © 2018 尚越文化发展有限公司  All rights reserved.</div>
-                        </div>
-                    </div>
-                    <div class="footerBottomRightBox">
-                        <div class="footerBottomRightMeun">
-                            <div class="footerBottomRightMeunTitle">友情链接</div>
-                            <div class="footerBottomRightMeunContent">
-                                <ul>
-                                    <li><a href="#">Team8 特設サイト</a></li>
-                                    <li><a href="#">Team8 facebookページ</a></li>
-                                    <li><a href="#">AKB48 公式モバイル</a></li>
-                                    <li><a href="#">プライベートメール</a></li>
-                                    <li><a href="#">誰かのためにプロジェクト</a></li>
-                                    <li><a href="#">AKB48ケータイきせかえ</a></li>
-                                    <li><a href="#">AKB OFFICIAL NET</a></li>
-                                </ul>
+                            <div class="footerBootomLeftText">
+                                <div class="footerBootomLeftTextNav">
+                                    <ul>
+                                        <li style="margin-left: 0"><a href="#">网站地图</a></li>
+                                        <li><a href="#">使用条款</a></li>
+                                        <li><a href="#">隐私保护</a></li>
+                                        <li style="border-right: 0"><a href="#">联系我们</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footerBootomLeftTextCopyRights">Copyright © 2018 尚越文化发展有限公司  All rights reserved.</div>
                             </div>
                         </div>
+                        <div class="footerBottomRightBox">
+                            <div class="footerBottomRightMeun">
+                                <div class="footerBottomRightMeunTitle">友情链接</div>
+                                <div class="footerBottomRightMeunContent">
+                                    <ul>
+                                        <li><a href="#">Team8 特設サイト</a></li>
+                                        <li><a href="#">Team8 facebookページ</a></li>
+                                        <li><a href="#">AKB48 公式モバイル</a></li>
+                                        <li><a href="#">プライベートメール</a></li>
+                                        <li><a href="#">誰かのためにプロジェクト</a></li>
+                                        <li><a href="#">AKB48ケータイきせかえ</a></li>
+                                        <li><a href="#">AKB OFFICIAL NET</a></li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                        <div class="footerBottomRightMeun">
-                            <div class="footerBottomRightMeunTitle">活动EVENTS</div>
-                            <div class="footerBottomRightMeunContent">
-                                <ul>
-                                    <li><a href="#">AKB48シングル選抜総選挙</a></li>
-                                    <li><a href="#">2017 2016 2015</a></li>
-                                    <li><a href="#">じゃんけん大会</a></li>
-                                </ul>
+                            <div class="footerBottomRightMeun">
+                                <div class="footerBottomRightMeunTitle">活动EVENTS</div>
+                                <div class="footerBottomRightMeunContent">
+                                    <ul>
+                                        <li><a href="#">AKB48シングル選抜総選挙</a></li>
+                                        <li><a href="#">2017 2016 2015</a></li>
+                                        <li><a href="#">じゃんけん大会</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
 
-                            <div class="footerBottomRightMeun" style="margin-left: 0;">
-                            <div class="footerBottomRightMeunTitle">首页</div>
-                            <div class="footerBottomRightMeunContent">
-                                <ul>
-                                    <li><a href="#">新闻</a></li>
-                                    <li><a href="#">AKB48 CHINA</a></li>
-                                    <li><a href="#">AKB48 Team SH</a></li>
-                                </ul>
+                                <div class="footerBottomRightMeun" style="margin-left: 0;">
+                                <div class="footerBottomRightMeunTitle">首页</div>
+                                <div class="footerBottomRightMeunContent">
+                                    <ul>
+                                        <li><a href="#">新闻</a></li>
+                                        <li><a href="#">AKB48 CHINA</a></li>
+                                        <li><a href="#">AKB48 Team SH</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--footer end-->
+        <!--footer end-->
+
     </div>
 <script>
+$(function() {
 
-  document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
+		var date = new Date();
+		var d = date.getDate();
+		var m = date.getMonth();
+		var y = date.getFullYear();
 
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-
-        plugins: [ 'interaction', 'dayGrid', 'list', 'googleCalendar' ],
-
-        header: {
-            left: 'prev,title,next today',
-          },
-        dayNames:['a','b','c','d','e','f','g'],
-        locales:"zh-cn",
-
-      // US Holidays
-      events: 'en.usa#holiday@group.v.calendar.google.com',
-      eventClick: function(arg) {
-        // opens events in a popup window
-        window.open(arg.event.url, 'google-calendar-event', 'width=700,height=600');
-
-        arg.jsEvent.preventDefault() // don't navigate in main tab
-      },
-
-      loading: function(bool) {
-        document.getElementById('loading').style.display =
-          bool ? 'block' : 'none';
-      }
-    });
-
-    calendar.render();
-  });
-
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,title,next'
+			},
+			firstDay:1,
+			editable: true,
+            firstDay:0,
+			timeFormat: 'H:mm',
+			axisFormat: 'H:mm',
+			events: [
+				{
+					title: 'AKB48 上海选秀活动',
+					start: new Date(y, m, 1),
+					editable:false,
+				},
+			],
+			eventClick: function() {
+			    $(".event_eventBC").show();
+                $(".event_eventBox").show(200);
+            },
+		});
+	});
+	$(".event_eventBoxClose").on("click",function () {
+	    $(".event_eventBox").hide(200);
+        $(".event_eventBC").hide();
+    })
 </script>
+
+<!-- Header Nav Fixed Fide start-->
+<script>
+        $(window).scroll(function(){
+            if($(window).scrollTop()>150){
+                $(".headerNavFixed").fadeIn(200);
+            }
+            else{
+                $(".headerNavFixed").fadeOut(200);
+            }
+        })
+        $(".headerNavFixed").click(function(){
+            $("html,body").animate({scrollTop:0},100);
+        })
+    </script>
+    
+
+    <!-- Header Nav Fixed Fide end-->
+
+    <!-- Top Fixed Slide start -->
+    <script>
+        $(function(){
+            var fs = true;
+            $(window).scroll(function(){
+                if($(window).scrollTop()>150){
+                    if(fs){
+                        $(".contentRightFixed").stop().animate({bottom:'25%'},200);
+                        fs = false;
+                    }
+                }
+                else{
+                    if(!fs){
+                        $(".contentRightFixed").stop().animate({bottom:'-100px'},200);
+                        fs = true ; 
+                    }
+                }
+            });
+
+        })
+        
+        $(".contentRightFixed").click(function(){
+            $("html,body").animate({scrollTop:0},100);
+            return false;
+        })
+    </script>
+    <!-- Top Fixed Slide end -->
+
+    <!-- javascript end -->
+
 </body>
 
 </html>
