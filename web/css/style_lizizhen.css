@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin: 0; padding: 0; outline: 0; }
+
+body, html { height: 100%; }
+body{
+	font-size: 100%;
+    font-size: 16px;
+    font-size: 1em;
+	max-width:100%;
+	min-width:320px; 
+	margin:auto;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	
+}
+img:not([src*="/"]){display:none;}
+img {
+max-width: 100%;
+height: auto;
+}
+
+a img { border: 0; }
+
+ul,li{
+	list-style:none;
+}
+
+.event_container {
+	position:relative;
+	width:100%;
+	height:auto;
+	margin:auto;
+	min-height:100%;
+}
+
+#header {
+	position:relative;
+	width: 100%;
+	height:auto;
+}
+.event_headerLizizhenBox{
+	width: 100%;
+	height:420px;
+	background-image: url(../images/lzz_headBackground1.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+.event_headerWidth{
+	width: 1280px;
+	height: 160px;
+	margin:0 auto;
+}
+
+.event_headerTop{
+	width: 1280px;
+	height: 160px;
+}
+
+.event_headerTopLogo{
+	float: left;
+	width: 116px;
+	height: 160px;
+	background-image: url(../images/lzz_headerTopLogo.png);
+}
+
+.event_headerText{
+	padding-top: 55px;
+	padding-bottom: 130px;
+	width: 100%;
+	height: 75px;
+	text-align: center;
+	font-family: 微软雅黑;
+	line-height: 75px;
+	color: white;
+	font-size: 75px;
+}
+
+.event_headerTopRight{
+	float: left;
+	height: 160px;
+	width: 1164px;
+}
+
+.event_headerTopRightTop{
+	padding-top: 50px;
+	height: 30px;
+	margin-bottom: 15px;
+}
+
+.event_headerTopRightBottom{
+	height: 16px;
+	margin-bottom: 49px;
+}
+
+.event_headerTopRightBottom li {
+    float: right;
+    width: auto;
+    height: 14px;
+    line-height: 14px;
+	margin-left: 50px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+.event_headerTopRightBottom a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.event_headerTopRightLoginBackground{
+	float: right;
+	width: 80px;
+	height: 30px;
+	line-height: 26px;
+	margin-left: 12px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	font-weight: 600;
+	color: #fff;
+	text-align: center;
+	background-color: transparent;
+	border-radius: 15px;
+	text-decoration: none;
+	box-sizing: border-box;/*设置为内边框*/
+	border: 2px solid #F45E9E;
+}
+
+.event_headerTopRightLoginBackground:hover{
+	background-color: #F45E9E;
+}
+
+#content{
+	position:relative;
+	width: 100%;
+	height:auto;
+}
+.event_contentBox{
+	width: 100%;
+	height: auto;
+	background-color: #FAE0E9;
+}
+.event_contentEvent{
+	width: 1280px;
+	height: auto;
+	margin:0 auto;
+	padding-bottom: 70px;
+}
+
+#calendar{
+	max-width: 12800px;
+    margin: 0 auto;
+}
+#loading {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+#footer{
+	position:relative;
+	width: 100%;
+    height: auto;
+}
+.event_footerTop{
+	height: 490px;
+	width: 100%;
+	background-color: #F7CFE9;
+}
+.event_footerBottom{
+	height: 380px;
+	width: 100%;
+	background-color: #E05E9E;
+}
+.event_footerTopWidth{
+	height: 490px;
+	width: 1280px;
+	margin: 0 auto;
+}
+.event_footerBottomWidth{
+	height: 380px;
+	width: 1280px;
+	margin: 0 auto;
+}
+
+.event_eventBox {
+    position:fixed;
+	z-index: 99999;
+    width: 768px;
+    height: 458px;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: none;
+	background-color: white;
+	border: #E05E9E solid 2px;
+}
+.event_eventBoxPhoto{
+	margin-top: 30px;
+	margin-left: 20px;
+	width: 726px;
+	height: 415px;
+	background-image: url(../images/lzz_event.jpg);
+	background-size: 100% 100%;
+}
+.event_eventBoxClose{
+	height: 30px;
+	width: 30px;
+	background-image: url(../images/lzz_close.png);
+	margin-top: -40px;
+	margin-left: 738px;
+}
+.event_eventBC{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: black;
+	opacity: 0.3;
+	height: 100%;
+	width: 100%;
+	z-index: 9999;
+}
