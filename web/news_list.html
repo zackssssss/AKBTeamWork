@@ -551,35 +551,69 @@
     })
 
     $(".newsListdetailNewsBox>ul>li").mouseover(function () {
+        $(document).ready({
+
+        })
         $(this).find(".newsListdetailNewsTitle").stop().animate({"bottom":"65px"},200,function () {
         });
-        $(this).find(".newsListcheckBt").show();
+        $(this).find(".newsListcheckBt").stop().fadeIn();
     })
 
     $(".newsListdetailNewsBox>ul>li").mouseleave(function () {
-        $(this).find(".newsListcheckBt").hide();
+        $(this).find(".newsListcheckBt").stop().fadeOut();
         $(this).find(".newsListdetailNewsTitle").stop().animate({"bottom":"30px"},200);
     })
 </script>
 <script>
+    $(".swiper-pagination").on("click","span",function(){
+
+        const index = $(this).index();
+        var pageIdex = $('.swiper-container .swiper-slide').eq(index).
+        $(window).alert(pageIdex)
+
+        if (!index){
+
+            var trueHeight = 1975 + 'px';
+            $(".newsListcontentBox").stop().animate({"height":trueHeight},1500);
+        }
+        else {
+            $(".newsListcontentBox").stop().animate({"height":"885px"},100);
+        }
+
+    })
     var swiper = new Swiper('.swiper-container', {
         effect : 'fade',
+        speed:2500,
         fadeEffect: {
-            crossFade: false,
+            crossFade: true,
         },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
             renderBullet: function (index, className) {
 
-                switch(index){
-                    case 0:text="所有新闻";break;
-                    case 1:text="官方头条";break
-                    case 2:text="活&nbsp;&nbsp;动";break;
-                    case 3:text="最新演出";break;
-                    case 4:text="新上商品";break;
+                if (index==0){
+
+                    var borderColor = ' style="border-color: #E05E9E;" ';
+                    var pic = '<div class = "newsListallNewsIcon"><img src="images/newsList/zwg_allNews.png" height="21" width="20"/></div>';
+                    var style = '<span class="' + className + '"'+borderColor+'>' + pic + '所有新闻' + '</span>';
+                    return style;
                 }
-                return '<span class="' + className + '">' + text + '</span>';
+                if (index==1){
+                    return '<span class="' + className + '"'+' style="border-color: #FC97B8;" '+'>' + '官方头条' + '</span>';
+                }
+                if (index==2){
+                    return '<span class="' + className + '"'+' style="border-color: #C898F5;" '+'>' + '活&nbsp;&nbsp;动' + '</span>';
+                }
+                if (index==3){
+                    return '<span class="' + className + '"'+' style="border-color: #FF8E00;" '+'>' + '最新演出' + '</span>';
+
+                }
+                if (index==4){
+                    return '<span class="' + className + '"'+' style="border-color: #FF2080;" '+'>' + '新上商品' + '</span>';
+
+                }
+
             },
         },
     });
