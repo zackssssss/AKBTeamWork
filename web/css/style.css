@@ -1686,6 +1686,9 @@ ul,li{list-style: none;}
 	border-radius: 50%;     
 	-moz-border-radius: 50%;      
 	-webkit-border-radius: 50%;
+	background-image: url(../images/ft_person.png);
+    background-repeat: no-repeat;
+	background-position:top center;
 	}
 .personal_center_leftmesgbox{
     float:left;
@@ -2024,7 +2027,7 @@ ul,li{list-style: none;}
 .content_ywb{
 	position:relative;
 	width:100%;
-	height:auto;
+	height:580px;
 	background-color:#FAE0E9;
 }
 .wbwx_ywb{
@@ -2180,7 +2183,7 @@ ul,li{list-style: none;}
 	width:320px;
 	height:auto;
 	margin:0 auto;
-	padding-top:100px;
+	padding-top:120px;
 	padding-left:0px;
 	padding-right:0px;
 	padding-bottom: 40px;
@@ -2398,14 +2401,15 @@ ul,li{list-style: none;}
 
  .shmodBox{
 	width: 100%;
-    height: auto;
+    height: 510px;
     padding-bottom: 40px;
 }
 .shmodWidthBox{
 	width: 1280px;
 	height: auto;
 	margin: 0 auto;
-	padding-top:175px;
+	padding-top: 120px;
+	padding-bottom: 160px;
 }
 
 .shtipBox{
